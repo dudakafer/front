@@ -1,0 +1,20 @@
+* {
+    border: 2px solid rgb(211, 16, 123);
+    padding: 20px;
+}
+
+p {
+    background-color: rgb(83, 43, 226);
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    padding: 30px;
+}
+
+.paragrafoEspecial{  
+    background-color: rgb(11, 155, 250);
+}
+
+#paragrafoInicial {
+    font-weight: 700%;
+}
