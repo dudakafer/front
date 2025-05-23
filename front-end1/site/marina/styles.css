@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Plano de fundo geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #e0f7ff, #ffffff);
+    color: #003366;
+    padding: 20px;
+}
+
+/* Centraliza o conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9fcff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 51, 102, 0.2);
+}
+
+/* Títulos principais */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #004080;
+    text-shadow: 1px 1px 2px rgba(0, 64, 128, 0.2);
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #0059b3;
+    border-left: 6px solid #66ccff;
+    padding-left: 12px;
+}
+
+/* Parágrafos e h3 */
+h3 {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: #003366;
+}
+
+/* Imagem */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover nas imagens */
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.2);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}

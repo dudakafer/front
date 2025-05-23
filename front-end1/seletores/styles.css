@@ -1,0 +1,46 @@
+.titulo-principal{
+    margin-bottom: 20px; color: plum
+    }
+    
+    .destaque{
+        color: rgba(162, 150, 230, 0.952);
+        background-color: rgb(138, 193, 238)
+        }
+    
+    #especial{
+    font-style: italic;
+    border-left: 3px solid rgb(177, 95, 224);
+    padding-left: 5px
+    }
+    
+    .paragrafo-comum{
+    line-height: 1.6
+    }
+    
+    
+    .bloco-um p{
+    background-color: rgb(238, 178, 223);
+    border-bottom: 2px solid rgb(200, 147, 243);
+    }
+    
+    .bloco-um .titulo-bloco {
+    font-family: Arial, sans-serif
+    }
+    
+    .bloco-dois .titulo-bloco{
+    font-family: Arial, sans-serif;
+    }
+    .bloco-dois p{
+    padding: 10px
+    }
+    
+    .lista-itens .item{
+    margin-bottom: 5px
+    }
+    
+    .lista-itens .itemdestaque{
+    background-color: lightblue
+    }
+    .lista-itens .ultimo-item{
+    color: rgb(245, 235, 92);
+    }

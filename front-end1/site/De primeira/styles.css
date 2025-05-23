@@ -1,0 +1,56 @@
+/* Geral */
+body {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f2ff; /* azul bem clarinho */
+    color: #002b50;
+    line-height: 1.6;
+}
+
+/* Títulos */
+h2 {
+
+    color: #005a9c;
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* Subtítulos */
+h3 {
+    font-size: 1.1em;
+    color: #003b66;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover em subtítulos */
+h3:hover {
+    color: #007acc;
+    transform: translateX(5px);
+}
+
+/* Destaques visuais */
+h3::before {
+    content: "🎧 ";
+    color: #007acc;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+h2::before {
+    content: "⭐ ";
+    color: #007acc;
+    margin-right: 5px;
+}
+
+/* Remover ícones duplicados em seções específicas */
+h2:has(> span.no-icon)::before,
+h3:has(> span.no-icon)::before {
+    content: "";
+    margin: 0;
+}
