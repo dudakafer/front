@@ -1,0 +1,25 @@
+.Menu{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /*espaço entre os itens*/
+    align-items: center;
+    flex-wrap: wrap;/*para deixar bonitinho*/
+    
+    }
+    
+    header {
+    background-color: #b994df;
+    height: 100px;
+    
+    }
+    a{
+    text-decoration: none /*tira o sublinhado*/;
+    color: rgb(129, 16, 235);
+    }
+    
+    a:hover{
+    color: #d79fe6;
+    }
+    
+    
