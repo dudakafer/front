@@ -1,25 +1,56 @@
-.Menu{
+.Menu {
     height: 100px;
     display: flex;
     justify-content: center;
-    gap: 50px; /*espaço entre os itens*/
+    gap: 50px;
+    /*espaço entre os itens*/
     align-items: center;
-    flex-wrap: wrap;/*para deixar bonitinho*/
-    
-    }
-    
-    header {
+    flex-wrap: wrap;
+    /*para deixar bonitinho*/
+
+}
+
+header {
     background-color: #b994df;
     height: 100px;
-    
-    }
-    a{
-    text-decoration: none /*tira o sublinhado*/;
+
+}
+
+a {
+    text-decoration: none
+        /*tira o sublinhado*/
+    ;
     color: rgb(129, 16, 235);
-    }
-    
-    a:hover{
+}
+
+a:hover {
     color: #d79fe6;
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        position: fixed;
+        width: 100px;
+        height: 100vh;
     }
-    
-    
+
+    a {
+        font-size: var(--tamanhoLinkMobile);
+    }
+
+}
+
+.imgMobile {
+    display: inline;
+    width: 80px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+@media print { /* Regra para impressoras */
+header {
+    display: none;
+}
+}
