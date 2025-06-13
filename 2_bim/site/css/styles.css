@@ -1,58 +1,45 @@
 :root {
-    --corFundo: #a1ccf0;
-    --tamanhoLink: 1.5rem --tamanhoLinkMobile: 0.8rem;
+    --corFundo: #b2e5f5;
+    --tamanhoLink: 1.5rem;
+    --tamanhoLinkMobile: 0.8rem;
 }
+
 
 body {
     background-color: var(--corFundo);
 }
 
-a {
-    font-size: var(--tamanhoLinkMobile);
-    text-decoration: none;
-}
-
 h1 {
     font-weight: bold;
-    z-index: 10;
 }
 
 footer {
-    background-color: #888;
+    background-color: #e5c2f5;
 }
-
-.paisagem,
-.retrato {
+.paisagem, .retrato {
     display: none;
 }
 
-@media screen and (orientation: landscape) {
-
-    /* Regra para janelas paisagem */
+@media screen and (orientation: landscape) { /* Regra para janelas paisagem */
     .paisagem {
         display: block;
     }
 }
 
-@media screen and (orientation: portrait) {
-
-    /* Regra para janelas retrato */
+@media screen and (orientation: portrait) { /* Regra para janelas retrato */
     .retrato {
         display: block;
     }
 }
 
-@media screen and (min-width:601px) {
-
-    /* Regra para janelas com mais de 600px */
+@media screen and (min-width:601px) { /* Regra para janelas com mais de 600px */
     main {
         min-height: calc(100vh - 16px - 100px);
     }
 }
 
 
-@media screen and (max-width:600px) {
-    /* Regra para janelas com 600px ou menos */
+@media screen and (max-width:600px) { /* Regra para janelas com 600px ou menos */
 
     main,
     footer {
