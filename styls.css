@@ -37,14 +37,14 @@ nav ul li a:hover {
     color: #fff;
 }
 
-.imagem-centralizada {
+.dd {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
 
-.imagem-centralizada img {
+.dd img {
     max-width: 100%;
     height: auto;
     border-radius: 12px; /* opcional: bordas arredondadas */
