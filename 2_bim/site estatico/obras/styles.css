@@ -6,14 +6,14 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e0f0ff;
-    color: #003366; 
+    background-color: #441212; /* quase preto com toque vinho */
+    color: #a63d40; /* vermelho escuro, vinho queimado */
 }
 
 header {
-    background-color: #cce5ff; 
+    background-color: #a33d3d; /* bordô escuro */
     padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 51, 102, 0.2);
+    box-shadow: 0 4px 6px rgba(219, 43, 48, 0.6);
 }
 
 nav ul {
@@ -25,7 +25,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #003366;
+    color: #000000;
     font-weight: bold;
     padding: 10px 15px;
     transition: background 0.3s ease, color 0.3s ease;
@@ -33,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #99ccff; /* azul médio */
+    background-color: #7a292a; /* vermelho escuro mais suave */
     color: #fff;
 }
 
@@ -41,7 +41,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 30px;
-    color: #003366;
+    color: #531113;
 }
 
 .imagem-centralizada {
@@ -55,29 +55,5 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 12px; 
-    box-shadow: 0 4px 8px rgba(0, 51, 102, 0.2); 
+    box-shadow: 0 4px 8px rgba(166, 61, 64, 0.6);
 }
-.md {
-    text-align: center;
-    margin-top: 30px;
-    color: #003366;
-}
-
-footer {
-    background-color:#003366;
-    color: #99ccff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-    }
-    
-    footer a {
-    color:#fff;
-    text-decoration: none;
-    margin: 0 5px;
-    font-weight: bold;
-    }
-    
-    footer a:hover {
-    color: #99ccff;
-    }
