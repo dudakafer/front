@@ -10,10 +10,29 @@ body {
     color: #660000; /* vermelho escuro para contraste */
 }
 
+/* Cabeçalho */
 header {
     background-color: #972b2b; /* vermelho claro */
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(102, 0, 0, 0.2);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f1faee; /* texto claro */
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 1.5rem;
+    color: #f1faee; /* texto claro */
+}
+
+/* Navegação */
+nav {
+    background-color: #b73232; /* vermelho mais escuro */
+    padding: 15px 0;
 }
 
 nav ul {
@@ -25,7 +44,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #660000;
+    color: #f1faee; /* texto claro */
     font-weight: bold;
     padding: 10px 15px;
     transition: background 0.3s ease, color 0.3s ease;
@@ -34,19 +53,187 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #550404; /* vermelho suave ao passar o mouse */
-    color: #f16464;
+    color: #f16464; /* destaque ao passar o mouse */
 }
 
-.imagem-centralizada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
-.imagem-centralizada img {
-    max-width: 100%;
-    height: auto;
+/* Seção de introdução */
+.bio-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.bio-image {
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(102, 0, 0, 0.2); /* sombra com tom de vermelho escuro */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(102, 0, 0, 0.2);
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.bio-image:hover img {
+    transform: scale(1.03);
+}
+
+.quick-facts {
+    background-color: #f1faee; /* fundo claro */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quick-facts h2 {
+    color: #b73232; /* vermelho claro */
+    margin-bottom: 20px;
+}
+
+.quick-facts ul {
+    list-style: none;
+}
+
+.quick-facts li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.quick-facts li:before {
+    content: "•";
+    color: #b73232; /* vermelho claro */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+/* Seção de biografia */
+.bio-content {
+    background-color: #f1faee; /* fundo claro */
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.section-title {
+    color: #b73232; /* vermelho claro */
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Discografia */
+.discography {
+    background-color: #f1faee; /* fundo claro */
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.album-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.album-cover {
+    height: 250px;
+    overflow: hidden;
+}
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.album-card:hover .album-cover img {
+    transform: scale(1.05);
+}
+
+.album-info {
+    padding: 20px;
+}
+
+.album-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #b73232; /* vermelho claro */
+}
+
+.album-year {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #972b2b; /* vermelho claro */
+    color: #f1faee; /* texto claro */
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .bio-intro {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+
+    .bio-content, .discography {
+        padding: 30px 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
 }
