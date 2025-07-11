@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="en">
+<>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rita Lee - A Rainha do Rock Brasileiro</title>
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Responsive Layout</title>
+    <styl>
         * {
             margin: 0;
             padding: 0;
@@ -13,393 +13,113 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f1f1; /* Fundo claro para melhor leitura */
-            color: #333;
+            background-color: #2b0a0a; /* quase preto com toque vinho */
+            color: #a63d40; /* vermelho escuro, vinho queimado */
             line-height: 1.6;
         }
 
-        /* Cabeçalho */
-        .hero {
-            background: linear-gradient(rgba(183, 50, 50, 0.9), rgba(183, 50, 50, 0.8));
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-            position: relative;
-            overflow: hidden;
+        header {
+            background-color: #a33d3d; /* bordô escuro */
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(219, 43, 48, 0.6);
         }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin: 0;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .subtitle {
-            font-size: 1.8rem;
-            font-weight: 300;
-            letter-spacing: 1px;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Navegação */
-        nav {
-            background-color: #b73232;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            overflow-x: hidden;
         }
 
         nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
-            gap: 30px;
+            gap: 20px;
             flex-wrap: wrap;
+            padding: 0 10px;
         }
 
         nav ul li a {
             text-decoration: none;
-            color: white;
-            font-weight: 600;
+            color: #000000;
+            font-weight: bold;
             padding: 10px 15px;
-            transition: all 0.3s ease;
-            border-radius: 25px;
-            font-size: 1.1rem;
+            transition: background 0.3s ease, color 0.3s ease;
+            border-radius: 8px;
+            display: block;
+            white-space: nowrap;
         }
 
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
+            background-color: #7a292a; /* vermelho escuro mais suave */
+            color: #fff;
         }
 
-        /* Conteúdo principal */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 0;
-        }
-
-        /* Seção de introdução */
-        .bio-intro {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .bio-image {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            height: fit-content;
-        }
-
-        .bio-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .bio-image:hover img {
-            transform: scale(1.03);
-        }
-
-        .quick-facts {
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            height: fit-content;
-        }
-
-        .quick-facts h2 {
-            color: #b73232;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-        }
-
-        .quick-facts ul {
-            list-style: none;
-        }
-
-        .quick-facts li {
-            margin-bottom: 15px;
-            padding-left: 25px;
-            position: relative;
-            font-size: 1.1rem;
-        }
-
-        .quick-facts li:before {
-            content: "•";
-            color: #b73232;
-            font-size: 1.5rem;
-            position: absolute;
-            left: 0;
-            top: -3px;
-        }
-
-        .fact-label {
-            font-weight: 600;
-            color: #b73232;
-        }
-
-        /* Seção de biografia */
-        .bio-content {
-            background-color: white;
-            padding: 50px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            margin-bottom: 60px;
-        }
-
-        .section-title {
-            color: #b73232;
-            font-size: 2rem;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-
-        .biography-text {
-            font-size: 1.15rem;
-            line-height: 1.8;
-            margin-bottom: 30px;
-            color: #444;
-        }
-
-        .biography-text p {
-            margin-bottom: 20px;
-        }
-
-        /* Discografia */
-        .discography {
-            background-color: white;
-            padding: 50px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        }
-
-        .album-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .album-card {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .album-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .album-cover {
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .album-cover img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .album-card:hover .album-cover img {
-            transform: scale(1.05);
-        }
-
-        .album-info {
-            padding: 20px;
-        }
-
-        .album-title {
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #b73232;
-        }
-
-        .album-year {
-            color: #777;
-            font-size: 0.9rem;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #333;
-            color: white;
+        .titulo {
             text-align: center;
-            padding: 30px 0;
-            margin-top: 60px;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin: 30px 20px 0;
+            color: #531113;
+            line-height: 1.3;
         }
 
-        /* Responsividade */
-        @media (max-width: 900px) {
-            .bio-intro {
-                grid-template-columns: 1fr;
-            }
+        .imagem-centralizada {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: clamp(20px, 5vw, 40px) 20px;
+            padding: 0 10px;
+        }
 
-            .hero h1 {
-                font-size: 2.8rem;
-            }
+        .imagem-centralizada img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px; 
+            box-shadow: 0 4px 8px rgba(166, 61, 64, 0.6);
+        }
 
-            .subtitle {
-                font-size: 1.5rem;
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .container {
+                padding: 0 15px;
             }
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             nav ul {
-                gap: 15px;
+                gap: 10px;
             }
-
+            
             nav ul li a {
                 padding: 8px 12px;
-                font-size: 1rem;
+                font-size: 0.9em;
             }
 
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .subtitle {
-                font-size: 1.2rem;
-            }
-
-            .bio-content, .discography {
-                padding: 30px 20px;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
+            .titulo {
+                font-size: 2rem;
             }
         }
-    </style>
-</head>
-<body>
-    <header class="hero">
-        <h1>Rita Lee</h1>
-        <p class="subtitle">A Rainha do Rock Brasileiro</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#biografia">Biografia</a></li>
-            <li><a href="#carreira">Carreira</a></li>
-            <li><a href="#discografia">Discografia</a></li>
-            <li><a href="#curiosidades">Curiosidades</a></li>
-        </ul>
-    </nav>
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            nav ul li a {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
 
-    <main class="container">
-        <section class="bio-intro">
-            <div class="bio-image">
-                <img src="https://placehold.co/800x1000" alt="Rita Lee em performance no palco com microfone e roupa característica">
-            </div>
+            .titulo {
+                font-size: 1.5rem;
+            }
 
-            <div class="quick-facts">
-                <h2>Fatos Rápidos</h2>
-                <ul>
-                    <li><span class="fact-label">Nome completo:</span> Rita Lee Jones Carvalho</li>
-                    <li><span class="fact-label">Nascimento:</span> 31 de dezembro de 1947</li>
-                    <li><span class="fact-label">Origem:</span> São Paulo, Brasil</li>
-                    <li><span class="fact-label">Gêneros:</span> Rock, MPB, Psicodelia</li>
-                    <li><span class="fact-label">Período ativo:</span> 1966–2001</li>
-                    <li><span class="fact-label">Prêmios:</span> Vários Grammy Latinos, Prêmio Multishow</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="biografia" class="bio-content">
-            <h2 class="section-title">Biografia</h2>
-            <div class="biography-text">
-                <p>[ESPAÇO PARA A BIOGRAFIA COMPLETA]</p>
-            </div>
-        </section>
-
-        <section id="carreira" class="bio-content">
-            <h2 class="section-title">Carreira e Legado</h2>
-            <div class="biography-text">
-                <p>[DETALHES SOBRE A CARREIRA MUSICAL]</p>
-            </div>
-        </section>
-
-        <section id="discografia" class="discography">
-            <h2 class="section-title">Discografia</h2>
-            <div class="album-grid">
-                <!-- Álbum 1 -->
-                <div class="album-card">
-                    <div class="album-cover">
-                        <img src="https://placehold.co/400x400" alt="Capa do álbum Fruto Proibido">
-                    </div>
-                    <div class="album-info">
-                        <h3 class="album-title">Fruto Proibido</h3>
-                        <p class="album-year">1975</p>
-                    </div>
-                </div>
-                
-                <!-- Álbum 2 -->
-                <div class="album-card">
-                    <div class="album-cover">
-                        <img src="https://placehold.co/400x400" alt="Capa do álbum Hoje É o Primeiro Dia do Resto da Sua Vida">
-                    </div>
-                    <div class="album-info">
-                        <h3 class="album-title">Hoje É o Primeiro Dia...</h3>
-                        <p class="album-year">1972</p>
-                    </div>
-                </div>
-                
-                <!-- Álbum 3 -->
-                <div class="album-card">
-                    <div class="album-cover">
-                        <img src="https://placehold.co/400x400" alt="Capa do álbum Saúde">
-                    </div>
-                    <div class="album-info">
-                        <h3 class="album-title">Saúde</h3>
-                        <p class="album-year">1981</p>
-                    </div>
-                </div>
-                
-                <!-- Álbum 4 -->
-                <div class="album-card">
-                    <div class="album-cover">
-                        <img src="https://placehold.co/400x400" alt="Capa do álbum Rita Lee e Roberto">
-                    </div>
-                    <div class="album-info">
-                        <h3 class="album-title">Rita Lee e Roberto</h3>
-                        <p class="album-year">1985</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="curiosidades" class="bio-content">
-            <h2 class="section-title">Curiosidades</h2>
-            <div class="biography-text">
-                <p>[FATOS INTERESSANTES E CURIOSIDADES]</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2023 Todos os direitos reservados - Rita Lee</p>
-    </footer>
-</body>
-</html>
+            .imagem-centralizada {
+                margin: 20px 0;
+            }
+        }

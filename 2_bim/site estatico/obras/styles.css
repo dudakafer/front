@@ -6,12 +6,12 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #681616; /* vermelho bem claro */
-    color: #660000; /* vermelho escuro para contraste */
+    background-color: #681616;
+    color: #660000;
 }
 
 header {
-    background-color: #972b2b; /* vermelho claro */
+    background-color: #972b2b;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(102, 0, 0, 0.2);
 }
@@ -19,8 +19,11 @@ header {
 header ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     gap: 20px;
+    padding: 0 10px;
+    text-align: center;
 }
 
 header ul li a {
@@ -33,7 +36,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background-color: #550404; /* vermelho suave ao passar o mouse */
+    background-color: #550404;
     color: #f16464;
 }
 
@@ -44,8 +47,11 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     gap: 20px;
+    padding: 0 10px;
+    text-align: center;
 }
 
 nav ul li a {
@@ -58,14 +64,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #550404; /* vermelho suave ao passar o mouse */
+    background-color: #550404;
     color: #f16464;
 }
 
 section {
     margin: 40px 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* fundo branco com transparência */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -73,15 +79,15 @@ section {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #972b2b; /* cor do título */
+    color: #972b2b;
 }
 
 .obra {
     margin: 20px 0;
     padding: 15px;
-    border: 1px solid #972b2b; /* borda vermelha clara */
+    border: 1px solid #972b2b;
     border-radius: 8px;
-    background-color: #f8d7da; /* fundo claro para as obras */
+    background-color: #f8d7da;
 }
 
 .discografia-container {
@@ -117,9 +123,59 @@ h2 {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #972b2b; /* vermelho claro */
+    background-color: #972b2b;
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    header ul,
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .discografia-container {
+        grid-template-columns: 1fr;
+    }
+
+    .album {
+        padding: 12px;
+    }
+
+    .album h3 {
+        font-size: 1.1em;
+    }
+
+    .album li {
+        font-size: 0.95em;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .album h3 {
+        font-size: 1em;
+    }
+
+    .album li {
+        font-size: 0.9em;
+    }
+
+    header ul li a,
+    nav ul li a {
+        padding: 10px;
+        font-size: 0.95em;
+    }
 }

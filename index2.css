@@ -1,59 +1,117 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #2b0a0a; /* quase preto com toque vinho */
-    color: #a63d40; /* vermelho escuro, vinho queimado */
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2b0a0a; 
+            color: #a63d40; 
+            line-height: 1.6;
+        }
 
-header {
-    background-color: #a33d3d; /* bordô escuro */
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(219, 43, 48, 0.6);
-}
+        header {
+            background-color: #a33d3d; 
+            padding: 6px 0;
+            box-shadow: 0 4px 6px rgba(219, 43, 48, 0.6);
+        }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-}
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            overflow-x: hidden;
+        }
 
-nav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background 0.3s ease, color 0.3s ease;
-    border-radius: 8px;
-}
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
 
-nav ul li a:hover {
-    background-color: #7a292a; /* vermelho escuro mais suave */
-    color: #fff;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s ease, color 0.3s ease;
+            border-radius: 8px;
+            display: block;
+            white-space: nowrap;
+        }
 
-.titulo {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-top: 30px;
-    color: #531113;
-}
+        nav ul li a:hover {
+            background-color: #7a292a; /* vermelho escuro mais suave */
+            color: #fff;
+        }
 
-.imagem-centralizada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
+        .titulo {
+            text-align: center;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin: 30px 20px 0;
+            color: #531113;
+            line-height: 1.3;
+        }
 
-.imagem-centralizada img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px; 
-    box-shadow: 0 4px 8px rgba(166, 61, 64, 0.6);
-}
+        .imagem-centralizada {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: clamp(20px, 5vw, 40px) 20px;
+            padding: 0 10px;
+        }
+
+        .imagem-centralizada img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px; 
+            box-shadow: 0 4px 8px rgba(166, 61, 64, 0.6);
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 10px;
+            }
+            
+            nav ul li a {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+
+            .titulo {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            nav ul li a {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .titulo {
+                font-size: 1.5rem;
+            }
+
+            .imagem-centralizada {
+                margin: 20px 0;
+            }
+        }
