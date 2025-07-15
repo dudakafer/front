@@ -1,21 +1,19 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estrutura geral */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #681616; /* vinho escuro */
+    background-color: #681616;
+    /* vinho escuro */
     color: #160f0f;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Cabeçalho */
 header {
     width: 100%;
     background-color: #972b2b;
@@ -48,7 +46,6 @@ nav ul li a:hover {
     color: #f8d7da;
 }
 
-/* Conteúdo principal */
 .container {
     max-width: 900px;
     width: 100%;
@@ -64,7 +61,7 @@ nav ul li a:hover {
     animation: fadeIn 0.8s ease;
 }
 
-.container > h1 {
+.container>h1 {
     text-align: center;
     font-size: clamp(2rem, 5vw, 3rem);
     color: #801313;
@@ -77,28 +74,49 @@ nav ul li a:hover {
     text-align: justify;
 }
 
-/* Animação de entrada */
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Rodapé com galeria triangular */
 footer {
     width: 100%;
     padding: 40px 20px;
-    background-color: #972b2b;
-    color: #fff;
+    color: #000;
     text-align: center;
+    background-color: #a33838;
     border-top: 1px solid #3a2d2d;
     box-sizing: border-box;
 }
+.g {
+    color: #000;
+    text-align: center;
+    font-style: italic;
+}
+
+.redes-sociais {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.redes-sociais a {
+    color: #b45252;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
 
 .galeria-titulo {
     font-size: 1.6rem;
@@ -125,7 +143,7 @@ footer {
     width: 220px;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -156,7 +174,7 @@ footer .g {
         margin: 20px 15px 40px 15px;
     }
 
-    .container > h1 {
+    .container>h1 {
         font-size: 2rem;
     }
 
@@ -180,7 +198,7 @@ footer .g {
         margin: 20px 10px 30px 10px;
     }
 
-    .container > h1 {
+    .container>h1 {
         font-size: 1.6rem;
     }
 

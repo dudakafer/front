@@ -115,6 +115,21 @@ footer {
     color: #ddd;
     font-style: italic;
 }
+.redes-sociais {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.redes-sociais a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
     nav ul {
