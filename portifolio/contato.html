@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <h1>Entre em Contato</h1>
@@ -23,9 +25,10 @@
   <main>
     <section class="contato">
       <h2>Fale Comigo</h2>
-      <p>Quer trocar uma ideia, dar um feedback ou apenas dizer um oi?  
-      Preencha o formulário abaixo e eu vou responder assim que puder. <br>  
-      <strong>Email fictício: <span>portifolio.dudu@ficticio.com</span></strong></p>
+      <p>Quer trocar uma ideia, dar um feedback ou apenas dizer um oi?
+        Preencha o formulário abaixo e eu vou responder assim que puder. <br>
+        <strong>Email: <span>eduardakafervitoria@gmail.com</span></strong>
+      </p>
 
       <form id="formContato">
         <div class="campo">
@@ -52,10 +55,17 @@
 
   <footer>
     <div class="icones-redes">
-     
-     
-      <a href="https://www.instagram.com/duda._vitoria_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @duda.vitoria">
+
+
+      <a href="https://www.instagram.com/duda._vitoria_/" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram @duda.vitoria">
         <i class="fab fa-instagram"></i> @duda.vitoria
+      </a>
+      <a href="https://github.com/dudakafer" target="_blank">
+        <i class="fab fa-instagram"></i> GitHub
+      </a>
+      <a href="https://open.spotify.com/user/69sk1g0gkqqimxi7mqmllngju" target="_blank">
+        <i class="fab fa-instagram"></i> Spotify
       </a>
     </div>
     <div class="redes-sociais">
@@ -65,11 +75,12 @@
 
   <script>
     // Simulação do envio fictício
-    document.getElementById("formContato").addEventListener("submit", function(e){
+    document.getElementById("formContato").addEventListener("submit", function (e) {
       e.preventDefault();
       document.getElementById("resposta").classList.remove("escondido");
       this.reset();
     });
   </script>
 </body>
+
 </html>
