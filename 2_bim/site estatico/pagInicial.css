@@ -95,11 +95,6 @@ footer {
     border-top: 1px solid #3a2d2d;
     box-sizing: border-box;
 }
-.g {
-    color: #000;
-    text-align: center;
-    font-style: italic;
-}
 
 .redes-sociais {
     margin-top: 10px;
@@ -107,7 +102,7 @@ footer {
 }
 
 .redes-sociais a {
-    color: #b45252;
+    color: #6b1e1e;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
@@ -153,8 +148,9 @@ footer {
 
 footer .g {
     font-style: italic;
+    text-align: center;
     margin-top: 20px;
-    color: #f4cccc;
+    color: #080808;
 }
 
 /* Responsividade */

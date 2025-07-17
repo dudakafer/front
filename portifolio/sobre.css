@@ -117,7 +117,7 @@
     padding: 20px 0;
     text-align: center;
     margin-top: 40px;
-    border-top: 1px dashed #bfdbfe;
+    border-top: 1px dashed #549cf5;
   }
   
   .icones-redes {
@@ -128,7 +128,7 @@
   }
   
   .icones-redes a {
-    color: #cbd6f5;
+    color: #7193f1;
     text-decoration: none;
     font-size: 1.1rem;
     display: flex;
@@ -138,7 +138,7 @@
   }
   
   .icones-redes a:hover {
-    color: #8ab4f8;
+    color: #5a98fd;
   }
   
   .redes-sociais p {
