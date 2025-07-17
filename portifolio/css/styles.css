@@ -327,8 +327,8 @@ button:hover {
 
 /* ======== RODAPÉ ======== */
 footer {
-  background: #96b3ec;
-  color: #f0f4ff;
+  background: #d8e1fc;
+  color: #87a3f0;
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
@@ -483,7 +483,7 @@ main {
 /* Rodapé */
 footer {
     background-color: #96b3ec;
-    color: #cbd6f5;
+    color: #8391b8;
     padding: 20px 0;
     text-align: center;
     margin-top: 40px;
@@ -497,7 +497,7 @@ footer {
 }
 
 .icones-redes a {
-    color: #cbd6f5;
+    color: #667dbb;
     text-decoration: none;
     font-size: 1.1rem;
     display: flex;
@@ -508,7 +508,7 @@ footer {
 
 .icones-redes a:hover,
 .icones-redes a:focus {
-    color: #8ab4f8;
+    color: #6aa1f8;
     outline: none;
 }
 
